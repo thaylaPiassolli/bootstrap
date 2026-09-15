@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Maré Serena | Paraíso tropical</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<style>
+			:root {
+				--deep-sea: #073b4c;
+				--sea: #118ab2;
+				--foam: #f4fbf8;
+				--sand: #f7d794;
+				--coral: #ef8354;
+			}
+
+			body {
+				background: var(--foam);
+				color: var(--deep-sea);
+				font-family: 'Manrope', sans-serif;
+			}
+
+			h1, h2, h3, .display-font {
+				font-family: 'DM Serif Display', serif;
+			}
+
+			.navbar {
+				background: var(--deep-sea);
+			}
+
+			.navbar-brand {
+				color: var(--sand);
+				font-family: 'DM Serif Display', serif;
+				font-size: 1.6rem;
+			}
+
+			.navbar .nav-link {
+				color: rgba(255, 255, 255, .78);
+				font-size: .9rem;
+				font-weight: 700;
+			}
+
+			.navbar .nav-link:hover,
+			.navbar .nav-link:focus {
+				color: var(--sand);
+			}
+
+			.jumbotron {
+				background: linear-gradient(90deg, rgba(7, 59, 76, .88), rgba(17, 138, 178, .25)), url('https://images.unsplash.com/photo-1507525423074-b723a2b6d4e3?auto=format&fit=crop&w=1800&q=85') center/cover;
+				border-radius: 0 0 2rem 2rem;
+				color: white;
+				min-height: 390px;
+				display: flex;
+				align-items: center;
+			}
+
+			.eyebrow {
+				color: var(--sand);
+				font-size: .75rem;
+				font-weight: 800;
+				letter-spacing: .18em;
+				text-transform: uppercase;
+			}
+
+			.display-title {
+				font-size: clamp(3rem, 8vw, 6.5rem);
+				line-height: .95;
+				max-width: 680px;
+			}
+
+			.section-label {
+				letter-spacing: .12em;
+				text-transform: uppercase;
+				font-size: .75rem;
+				font-weight: 800;
+				color: var(--coral);
+			}
+
+			.beach-card {
+				border: 0;
+				border-radius: 1rem;
+				overflow: hidden;
+				box-shadow: 0 1rem 2rem rgba(7, 59, 76, .09);
+				height: 100%;
+			}
+
+			.beach-card img {
+				height: 190px;
+				object-fit: cover;
+			}
+
+			.beach-card .card-body {
+				padding: 1.5rem;
+			}
+
+			.feature-panel {
+				border-radius: 1rem;
+				min-height: 220px;
+				padding: 2rem;
+			}
+
+			.feature-sea {
+				background: var(--sea);
+				color: white;
+			}
+
+			.feature-sand {
+				background: var(--sand);
+			}
+
+			.feature-panel h2 {
+				font-size: 2.4rem;
+			}
+
+			.btn-coral {
+				background: var(--coral);
+				border-color: var(--coral);
+				color: white;
+				font-weight: 700;
+			}
+
+			.btn-coral:hover {
+				background: #d96f43;
+				border-color: #d96f43;
+				color: white;
+			}
+
+			footer {
+				background: var(--deep-sea);
+				color: rgba(255, 255, 255, .75);
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark py-3" aria-label="Navegação principal">
+			<div class="container">
+				<a class="navbar-brand" href="#">Maré Serena</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menuPrincipal">
+					<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+						<li class="nav-item"><a class="nav-link" href="#experiencias">Experiências</a></li>
+						<li class="nav-item"><a class="nav-link" href="#rituais">Rituais</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+						<li class="nav-item"><a class="btn btn-coral btn-sm px-3 mt-2 mt-lg-0" href="#experiencias">Explorar</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<!-- Linha 1: uma coluna de tamanho 12 -->
+			<div class="row g-0">
+				<div class="col-12">
+					<section class="jumbotron px-4 px-md-5">
+						<div class="container py-5">
+							<p class="eyebrow mb-3">Sol, sal e horizonte</p>
+							<h1 class="display-title mb-4">Seu lugar ao sol.</h1>
+							<p class="lead mb-4 col-lg-6">Uma pausa entre a brisa morna, a areia dourada e o azul que parece não ter fim.</p>
+							<a class="btn btn-coral btn-lg px-4" href="#experiencias">Explorar a praia</a>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<div class="container py-5" id="experiencias">
+				<!-- Linha 2: duas colunas de tamanho 6 -->
+				<div class="row g-4 mb-5" id="rituais">
+					<div class="col-12 col-md-6">
+						<article class="beach-card card">
+							<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Canoa em uma praia tranquila">
+							<div class="card-body">
+								<p class="section-label mb-2">Manhã</p>
+								<h2 class="h3">Acorde com a maré</h2>
+								<p class="mb-0 text-secondary">Caminhe sem pressa pela faixa de areia e deixe o dia começar no seu ritmo.</p>
+							</div>
+						</article>
+					</div>
+					<div class="col-12 col-md-6">
+						<article class="beach-card card">
+							<img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Palmeiras diante do mar azul">
+							<div class="card-body">
+								<p class="section-label mb-2">Tarde</p>
+								<h2 class="h3">Sombra de coqueiro</h2>
+								<p class="mb-0 text-secondary">Um mergulho refrescante, fruta gelada e tempo suficiente para não fazer nada.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<!-- Linha 3: três colunas de tamanho 4 -->
+				<div class="row g-4 mb-5">
+					<div class="col-12 col-md-4">
+						<div class="feature-panel feature-sand">
+							<p class="section-label">01 / Ritual</p>
+							<h2>Sal na pele</h2>
+							<p class="mb-0">Respire fundo. O oceano sabe o caminho.</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="feature-panel feature-sea">
+							<p class="section-label text-warning">02 / Pausa</p>
+							<h2>Azul por todos os lados</h2>
+							<p class="mb-0 text-white-50">Horizonte aberto para pensamentos novos.</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="feature-panel bg-white">
+							<p class="section-label">03 / Encontro</p>
+							<h2>Fim de tarde</h2>
+							<p class="mb-0 text-secondary">A melhor luz chega quando o sol vai embora.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Linha 4: colunas de tamanho 4 e 8 -->
+				<div class="row g-4 align-items-stretch">
+					<div class="col-12 col-md-4">
+						<div class="feature-panel feature-sand d-flex flex-column justify-content-between">
+							<div>
+								<p class="section-label">Maré serena</p>
+								<h2>Leve só o essencial.</h2>
+							</div>
+							<span class="fs-1" aria-hidden="true">☼</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="feature-panel feature-sea d-flex flex-column justify-content-center">
+							<p class="section-label text-warning">A próxima onda</p>
+							<h2>O paraíso não precisa de pressa.</h2>
+							<p class="mb-0 text-white-50">Escolha uma direção, siga o som das ondas e deixe o resto para depois.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="py-4" id="contato">
+			<div class="container d-flex justify-content-between align-items-center gap-3 flex-wrap">
+				<span class="display-font text-white">Maré Serena</span>
+				<small>Feito para dias de céu aberto.</small>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
