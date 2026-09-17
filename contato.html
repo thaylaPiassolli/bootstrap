@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contato | Maré Serena</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<style>
+			:root {
+				--deep-sea: #073b4c;
+				--sea: #118ab2;
+				--foam: #f4fbf8;
+				--sand: #f7d794;
+				--coral: #ef8354;
+			}
+
+			body {
+				background: var(--foam);
+				color: var(--deep-sea);
+				font-family: 'Manrope', sans-serif;
+			}
+
+			h1, h2, h3, .display-font {
+				font-family: 'DM Serif Display', serif;
+			}
+
+			.navbar {
+				background: var(--deep-sea);
+			}
+
+			.navbar-brand {
+				color: var(--sand);
+				font-family: 'DM Serif Display', serif;
+				font-size: 1.6rem;
+			}
+
+			.navbar .nav-link {
+				color: rgba(255, 255, 255, .78);
+				font-size: .9rem;
+				font-weight: 700;
+			}
+
+			.navbar .nav-link:hover,
+			.navbar .nav-link:focus {
+				color: var(--sand);
+			}
+
+			.page-hero {
+				background: linear-gradient(135deg, rgba(7, 59, 76, .94), rgba(17, 138, 178, .65)),
+					url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=85') center/cover;
+				color: white;
+				padding: 6rem 0;
+			}
+
+			.section-label {
+				letter-spacing: .12em;
+				text-transform: uppercase;
+				font-size: .75rem;
+				font-weight: 800;
+				color: var(--coral);
+			}
+
+			.info-card {
+				background: white;
+				border-radius: 1rem;
+				padding: 2rem;
+				box-shadow: 0 1rem 2rem rgba(7, 59, 76, .08);
+				height: 100%;
+			}
+
+			.btn-coral {
+				background: var(--coral);
+				border-color: var(--coral);
+				color: white;
+				font-weight: 700;
+			}
+
+			.btn-coral:hover {
+				background: #d96f43;
+				border-color: #d96f43;
+				color: white;
+			}
+
+			.footer-main {
+				background: var(--deep-sea);
+				color: rgba(255, 255, 255, .78);
+				padding: 4rem 0 1.5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark py-3" aria-label="Navegação principal">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Maré Serena</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menuPrincipal">
+					<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+						<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+						<li class="nav-item"><a class="nav-link" href="experiencias.html">Experiências</a></li>
+						<li class="nav-item"><a class="nav-link" href="rituais.html">Rituais</a></li>
+						<li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+						<li class="nav-item"><a class="btn btn-coral btn-sm px-3 mt-2 mt-lg-0" href="contato.html">Falar conosco</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<section class="page-hero">
+				<div class="container">
+					<p class="section-label mb-3 text-warning">Contato</p>
+					<h1 class="display-4 mb-3">Quer viver uma experiência à beira-mar?</h1>
+					<p class="lead mb-0 col-lg-7">Fale com a gente e montamos o momento ideal para o seu próximo descanso na praia.</p>
+				</div>
+			</section>
+
+			<div class="container py-5">
+				<div class="row g-4">
+					<div class="col-12 col-lg-5">
+						<div class="info-card">
+							<p class="section-label mb-2">Atendimento</p>
+							<h2 class="h3">Informações e reservas</h2>
+							<ul class="list-unstyled mb-3 text-secondary">
+								<li><strong>E-mail:</strong> ola@mare-serena.com</li>
+								<li><strong>Telefone:</strong> (11) 5555-0102</li>
+								<li><strong>Local:</strong> Praia do Sol, 42</li>
+							</ul>
+							<p class="mb-0 text-secondary">Atendimento de segunda a domingo, das 8h às 18h.</p>
+						</div>
+					</div>
+					<div class="col-12 col-lg-7">
+						<div class="info-card">
+							<p class="section-label mb-2">Mensagem</p>
+							<h2 class="h3">Conte um pouco do seu desejo</h2>
+							<form>
+								<div class="row g-3">
+									<div class="col-md-6">
+										<label class="form-label">Nome</label>
+										<input type="text" class="form-control" placeholder="Seu nome">
+									</div>
+									<div class="col-md-6">
+										<label class="form-label">E-mail</label>
+										<input type="email" class="form-control" placeholder="seu@email.com">
+									</div>
+									<div class="col-12">
+										<label class="form-label">Mensagem</label>
+										<textarea class="form-control" rows="4" placeholder="Me diga mais sobre sua ideia de praia..."></textarea>
+									</div>
+									<div class="col-12">
+										<button type="submit" class="btn btn-coral px-4">Enviar</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer-main">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-12 col-md-4">
+						<h3 class="display-font text-white">Maré Serena</h3>
+						<p class="mb-0">Ao seu lado para transformar a pausa em uma experiência memorável.</p>
+					</div>
+					<div class="col-12 col-md-4">
+						<h4 class="h5 text-white">Explore</h4>
+						<ul class="list-unstyled mb-0">
+							<li><a href="index.html" class="text-white-50 text-decoration-none">Início</a></li>
+							<li><a href="experiencias.html" class="text-white-50 text-decoration-none">Experiências</a></li>
+							<li><a href="rituais.html" class="text-white-50 text-decoration-none">Rituais</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-4">
+						<h4 class="h5 text-white">Contato</h4>
+						<p class="mb-1">ola@mare-serena.com</p>
+						<p class="mb-0">Praia do Sol, 42</p>
+					</div>
+				</div>
+				<div class="border-top border-secondary mt-4 pt-3 text-center small text-white-50">
+					© 2026 Maré Serena · Feito para dias de céu aberto.
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
